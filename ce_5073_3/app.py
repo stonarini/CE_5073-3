@@ -4,7 +4,7 @@ from service import classify_one
 
 app = Flask('iris-classification')
 
-MODEL_TYPES = ['lr', 'svm', 'tree_model', 'knn']
+MODEL_TYPES = ['lr', 'svm', 'tree', 'knn']
 
 models = {}
 dvs = {}

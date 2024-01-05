@@ -25,8 +25,8 @@ lr.fit(X_train_std, y_train)
 svm = SVC(kernel='linear',C=1.0, random_state=1, probability=True)
 svm.fit(X_train_std, y_train)
 
-tree_model = DecisionTreeClassifier(criterion='gini',max_depth=4, random_state=1)
-tree_model.fit(X_train,y_train)
+tree = DecisionTreeClassifier(criterion='gini',max_depth=4, random_state=1)
+tree.fit(X_train,y_train)
 
 knn = KNeighborsClassifier(n_neighbors=3, p=2, metric='minkowski')
 knn.fit(X_train_std, y_train)
@@ -38,8 +38,8 @@ with open('../models/lr.pck', 'wb') as f:
 with open('../models/svm.pck', 'wb') as f:
     pickle.dump((sc, svm), f)
 
-with open('../models/tree_model.pck', 'wb') as f:
-    pickle.dump((sc, tree_model), f)
+with open('../models/tree.pck', 'wb') as f:
+    pickle.dump((sc, tree), f)
 
 with open('../models/knn.pck', 'wb') as f:
     pickle.dump((sc, knn), f)
