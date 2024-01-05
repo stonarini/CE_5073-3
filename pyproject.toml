@@ -1,8 +1,8 @@
 [tool.poetry]
-name = "ce-5073-3-1"
+name = "ce-5073-3"
 version = "0.1.0"
 description = ""
-authors = ["samuelekumo <samuele@kumointernet.com>"]
+authors = ["stonarini"]
 readme = "README.md"
 packages = [{include = "ce_5073_3"}]
 
@@ -16,3 +16,4 @@ numpy = "^1.26.2"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
